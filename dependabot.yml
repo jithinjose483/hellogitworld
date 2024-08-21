@@ -1,0 +1,17 @@
+version: 2
+updates:
+  - package-ecosystem: "python" # Choose the package ecosystem you are using
+    directory: "/" # Directory where your dependency file is located
+    schedule:
+      interval: "daily" # How often you want Dependabot to check for updates
+    ignore:
+      - dependency-name: "example-package" # Optional: Ignore updates for a specific package
+        versions: ["1.x.x"] # Optional: Specify versions to ignore
+
+  - package-ecosystem: "npm" # Another ecosystem example (JavaScript/Node.js)
+    directory: "/frontend" # Directory where package.json is located
+    schedule:
+      interval: "weekly" # Check for updates weekly for this ecosystem
+    ignore:
+      - dependency-name: "another-package"
+        versions: ["2.x.x"]
